@@ -6,7 +6,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.Map;
 
-
+/**
+ * @author 董文杰
+ */
 @Controller
 public class Hello {
     @RequestMapping("/success")
