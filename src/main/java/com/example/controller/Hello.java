@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.Map;
 
+
 @Controller
 public class Hello {
     @RequestMapping("/success")
@@ -13,7 +14,5 @@ public class Hello {
         map.put("hello","你好");
         return "success";
     }
-
-
 
 }
