@@ -21,9 +21,11 @@ public class DemoApplicationTests {
     @Test
     public void contextLoads() {
         List<User> users = userMappers.querAll();
+
         for (User user:users){
             System.out.println(user.toString());
         }
+
     }
 
 }

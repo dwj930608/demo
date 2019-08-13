@@ -9,6 +9,9 @@ public class User implements Serializable {
     private String username;
     private String loginName;
     private String name;
+    private String passWord;
+    private String type;
+    private Date lastLoginDate;
 
     public String getPassWord() {
         return passWord;
@@ -17,10 +20,6 @@ public class User implements Serializable {
     public void setPassWord(String passWord) {
         this.passWord = passWord;
     }
-
-    private String passWord;
-    private String type;
-    private Date lastLoginDate;
 
     public Integer getId() {
         return id;
@@ -50,24 +49,9 @@ public class User implements Serializable {
         return name;
     }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", username='" + username + '\'' +
-                ", loginName='" + loginName + '\'' +
-                ", name='" + name + '\'' +
-                ", passWord='" + passWord + '\'' +
-                ", type='" + type + '\'' +
-                ", lastLoginDate=" + lastLoginDate +
-                '}';
-    }
-
     public void setName(String name) {
         this.name = name;
     }
-
-
 
     public String getType() {
         return type;
@@ -83,5 +67,18 @@ public class User implements Serializable {
 
     public void setLastLoginDate(Date lastLoginDate) {
         this.lastLoginDate = lastLoginDate;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", loginName='" + loginName + '\'' +
+                ", name='" + name + '\'' +
+                ", passWord='" + passWord + '\'' +
+                ", type='" + type + '\'' +
+                ", lastLoginDate=" + lastLoginDate +
+                '}';
     }
 }

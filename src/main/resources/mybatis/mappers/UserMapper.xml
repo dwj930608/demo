@@ -6,7 +6,7 @@
 
     <!-- 可根据自己的需求，是否要使用 -->
 
-    <select id="querAll"  resultType="User">
+    <select id="querAll"  resultType="com.example.pojo.User">
          select * from user
 
        </select>
