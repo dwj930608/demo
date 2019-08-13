@@ -14,5 +14,4 @@ public class Hello {
         map.put("hello","你好");
         return "success";
     }
-
 }
